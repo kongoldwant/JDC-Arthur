@@ -7,14 +7,14 @@ on:
 
 env:
   REPO_URL: https://github.com/LiBwrt/openwrt-6.x.git
-  REPO_BRANCH: 24.10-6.12
+  REPO_BRANCH: kernel-6.12
   CONFIG_FILE: configs/ipq60xx-jd1800.config
   DIY_SCRIPT: diy-jd1800.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-24.10-6.12-WIFI
+  FIRMWARE_TAG: IPQ60XX-6.12-WIFI
   TZ: Asia/Shanghai
 
 jobs:
