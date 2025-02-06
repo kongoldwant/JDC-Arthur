@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'JDC-Arthur'
+project = 'JDC1800PRO'
 copyright = '2025, eze-root'
 author = 'eze-root'
 release = '0.0.1'
