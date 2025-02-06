@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'JDC1800PRO'
+project = 'JDC-Arthur'
 copyright = '2025, eze-root'
 author = 'eze-root'
 release = '0.0.1'
@@ -28,6 +28,12 @@ extensions = [
   "sphinxcontrib.mermaid",
   "sphinxemoji.sphinxemoji",
 ]
+
+html_context = {
+    "source_type": "github",
+    "source_user": "eze-root",
+    "source_repo": "JDC-Arthur",
+}
 
 html_css_files = [
  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
