@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'JDC1800PRO'
-copyright = '2025, hotchilipowder'
-author = 'hotchilipowder'
+copyright = '2025, eze-root'
+author = 'eze-root'
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
