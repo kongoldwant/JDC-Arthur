@@ -15,7 +15,7 @@ env:
   DIY_SCRIPT: diy-jd1800.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: IPQ60XX-6.12-WIFI
   TZ: Asia/Shanghai
