@@ -32,3 +32,4 @@ config interface 'wan6'
 config interface 'proxy'
         option proto 'none'
         option device 'tun0'
+
