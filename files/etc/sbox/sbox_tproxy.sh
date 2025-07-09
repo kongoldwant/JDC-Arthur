@@ -28,10 +28,10 @@ fi
 
 # not start
 if ! pgrep -f "${SERVICE_NAME}" > /dev/null; then
+    sh /etc/sbox/sbox_tproxy_stop.sh
     wget --no-check-certificate -O ${SBOX_CONFIG_PATH_NEW} $SBOX_CONFIG_URL
     mv $SBOX_CONFIG_PATH_NEW $SBOX_CONFIG_PATH
     echo "$(date '+%Y-%m-%d %H:%M:%S') - ${SERVICE_NAME} to start" 
-    sh /etc/sbox/sbox_tproxy_stop.sh
     sh /etc/sbox/sbox_tproxy_start.sh
     /etc/init.d/${SERVICE_NAME} start
 else
@@ -39,10 +39,10 @@ else
     if [ "$current_hour" -ge 1 ] && [ "$current_hour" -lt 2 ]; then
         echo "$(date '+%Y-%m-%d %H:%M:%S') - ${SERVICE_NAME} 1am and 2am, reload" 
         sh /etc/sbox/sbox_tproxy_stop.sh
-        sh /etc/sbox/sbox_tproxy_start.sh
         wget --no-check-certificate -O ${SBOX_CONFIG_PATH_NEW} $SBOX_CONFIG_URL
         mv $SBOX_CONFIG_PATH_NEW $SBOX_CONFIG_PATH
         echo "$(date '+%Y-%m-%d %H:%M:%S') - ${SERVICE_NAME} reload" 
+        sh /etc/sbox/sbox_tproxy_start.sh
         /etc/init.d/${SERVICE_NAME} reload
     else
         echo "$(date '+%Y-%m-%d %H:%M:%S') - Skipping"
