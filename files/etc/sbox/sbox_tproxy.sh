@@ -7,7 +7,7 @@ SBOX_PATH="/tmp/sing-box/sing-box"
 SBOX_CONFIG_PATH="/tmp/sing-box/config.json"
 SBOX_CONFIG_PATH_NEW="/tmp/sing-box/config-new.json"
 
-SBOX_URL="https://github.com/hotchilipowder/sing-box/releases/download/binary-linux_mipsle_softfloat/sing-box"
+SBOX_URL=""
 SBOX_CONFIG_URL=""
 
 error_exit() {
