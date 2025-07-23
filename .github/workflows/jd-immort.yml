@@ -1,4 +1,4 @@
-name: JDC1800-6.12-WIFI
+name: JDC1800-IMMort
 
 on:
   workflow_dispatch:
